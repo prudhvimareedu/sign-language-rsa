@@ -1,4 +1,5 @@
-const API_URL = "http://127.0.0.1:8000";
+const API_URL =
+  "https://sign-language-rsa.onrender.com";
 
 export async function predictImage(blob) {
   const formData = new FormData();
