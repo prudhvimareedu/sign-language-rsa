@@ -1,0 +1,87 @@
+# ================================
+# Python
+# ================================
+
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ================================
+# Environment files
+# ================================
+
+.env
+.env.*
+!.env.example
+
+# ================================
+# Datasets
+# ================================
+
+data/asl_alphabet/
+data/public/
+data/processed/*.csv
+
+# Keep project directories
+!data/
+!data/processed/
+
+# ================================
+# Jupyter
+# ================================
+
+.ipynb_checkpoints/
+
+# ================================
+# Node / React
+# ================================
+
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Temporary Vite project
+frontend/react-temp/
+
+# ================================
+# Logs
+# ================================
+
+*.log
+
+# ================================
+# OS files
+# ================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ================================
+# IDE
+# ================================
+
+.vscode/
+.idea/
+
+# ================================
+# Temporary files
+# ================================
+
+*.tmp
+*.temp
+# Final model policy
+backend/models/*.joblib
+!backend/models/asl_landmark_baseline_svm.joblib
+!backend/models/asl_model_comparison.joblib
+!backend/models/asl_rsa_selected_indices.joblib
+!backend/models/asl_rsa_svm.joblib
+!backend/models/session_live_knn.joblib
+
+# Local datasets
+data/
+
+# Accidental temporary file
+frontend/src/main.jsx.txt
